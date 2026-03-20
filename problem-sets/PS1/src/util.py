@@ -86,5 +86,7 @@ def plot(x, y, theta, save_path=None, correction=1.0):
     # Add labels and save to disk
     plt.xlabel('x1')
     plt.ylabel('x2')
-    if save_path is not None:
+    if save_path is None:
+        plt.show()
+    else:
         plt.savefig(save_path)
